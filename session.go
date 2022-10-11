@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ajankovic/smpp/pdu"
+	"github.com/dolnikov/smpp/pdu"
 )
 
 var smppLogs bool
@@ -301,7 +301,7 @@ func (sess *Session) handleRequest(ctx context.Context, h pdu.Header, req pdu.PD
 		sess.wg.Done()
 	}()
 	sessCtx := &Context{
-		sess: sess,
+		Sess: sess,
 		ctx:  ctx,
 		seq:  h.Sequence(),
 		req:  req,

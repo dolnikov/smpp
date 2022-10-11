@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ajankovic/smpp"
-	"github.com/ajankovic/smpp/pdu"
+	"github.com/dolnikov/smpp"
+	"github.com/dolnikov/smpp/pdu"
 )
 
 const (
